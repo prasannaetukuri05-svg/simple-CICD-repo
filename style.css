@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Admission Form</title>
+</head>
+<body style="font-family: Arial; background-color: #f4f6f9; padding: 20px;">
+
+  <h2 style="text-align: center;">College Admission Form</h2>
+  <form style="max-width: 600px; margin: auto; background: #fff; padding: 20px; border-radius: 8px;" action="#" method="post">
+
+    <label>First Name:</label><br>
+    <input type="text" name="fname" required><br><br>
+
+    <label>Last Name:</label><br>
+    <input type="text" name="lname" required><br><br>
+
+    <label>Date of Birth:</label><br>
+    <input type="date" name="dob" required><br><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female
+    <input type="radio" name="gender" value="Other"> Other <br><br>
+
+    <label>Email:</label><br>
+    <input type="email" name="email" required><br><br>
+
+    <label>Phone Number:</label><br>
+    <input type="tel" name="phone" pattern="[0-9]{10}" placeholder="10-digit number" required><br><br>
+
+    <label>Address:</label><br>
+    <textarea name="address" rows="3" cols="40" required></textarea><br><br>
+
+    <label>Course Applied For:</label><br>
+    <select name="course" required>
+      <option value="">--Select--</option>
+      <option>B.Sc</option>
+      <option>B.A</option>
+      <option>B.Com</option>
+      <option>B.Tech</option>
+      <option>MBA</option>
+    </select><br><br>
+
+    <label>Upload Photo:</label><br>
+    <input type="file" name="photo" accept="image/*" required><br><br>
+
+    <input type="checkbox" name="agree" required> I confirm that the details provided are correct.<br><br>
+
+    <center>
+      <input type="submit" value="Submit" style="padding: 8px 15px; background: #4CAF50; color: white; border: none; border-radius: 5px;">
+      <input type="reset" value="Reset" style="padding: 8px 15px; background: #f44336; color: white; border: none; border-radius: 5px;">
+    </center>
+  </form>
+
+</body>
+</html>
